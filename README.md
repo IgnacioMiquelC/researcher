@@ -26,7 +26,6 @@ researcher/
 The fastest way to run the entire system:
 
 ```bash
-npm install              # Install all packages
 docker compose up -d     # Start PostgreSQL, Redis, API, and Worker
 docker compose logs -f   # View logs
 ```
