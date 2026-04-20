@@ -1,0 +1,34 @@
+{
+  "name": "research-jobs",
+  "version": "1.0.0",
+  "description": "Job engine",
+  "author": "José Ignacio Miquel Castro",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./dist/index.js",
+    "./job-queue": "./dist/job-queue/index.js",
+    "./job-queue/types": "./dist/job-queue/types.js",
+    "./job-queue/client": "./dist/job-queue/client.js",
+    "./job-queue/redis": "./dist/job-queue/redis.js",
+    "./job-store": "./dist/job-store/index.js",
+    "./job-store/client": "./dist/job-store/client.js",
+    "./job-store/db": "./dist/job-store/db.js",
+    "./schemas/job": "./dist/schemas/job.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bullmq": "^5.10.0",
+    "kysely": "^0.28.16",
+    "pg": "^8.11.3",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "@types/pg": "^8.11.5",
+    "typescript": "^5.3.3"
+  }
+}

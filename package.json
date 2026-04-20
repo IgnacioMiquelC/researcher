@@ -1,0 +1,16 @@
+{
+  "name": "researcher",
+  "version": "1.0.0",
+  "description": "Researcher application",
+  "private": true,
+  "workspaces": [
+    "packages/api",
+    "packages/worker",
+    "packages/shared/researcher-sdk",
+    "packages/shared/research-jobs"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "dev": "npm run dev --workspaces"
+  }
+}

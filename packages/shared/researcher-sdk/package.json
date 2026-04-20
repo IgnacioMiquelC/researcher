@@ -1,0 +1,25 @@
+{
+  "name": "researcher-sdk",
+  "version": "1.0.0",
+  "description": "Software Development Kit for Researcher API",
+  "author": "José Ignacio Miquel Castro",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./dist/index.js",
+    "./schemas": "./dist/schemas/index.js",
+    "./client": "./dist/client.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"No tests yet\""
+  },
+  "dependencies": {
+    "axios": "^1.15.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "typescript": "^5.3.3"
+  }
+}

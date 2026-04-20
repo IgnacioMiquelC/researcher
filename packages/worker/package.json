@@ -1,0 +1,23 @@
+{
+  "name": "worker",
+  "version": "1.0.0",
+  "description": "Research worker for job processing.",
+  "author": "José Ignacio Miquel Castro",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/worker.js",
+    "dev": "node --loader tsx/cjs src/worker.ts"
+  },
+  "dependencies": {
+    "axios": "^1.15.0",
+    "research-jobs": "../shared/research-jobs",
+    "bullmq": "^5.10.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "typescript": "^5.3.3",
+    "tsx": "^4.7.0"
+  }
+}
